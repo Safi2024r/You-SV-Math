@@ -1,0 +1,92 @@
+/* تنظیمات کلی صفحه */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #003366; /* رنگ آبی تیره */
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/numbers.jpg'); /* مسیر تصویر پس‌زمینه */
+    background-size: cover;
+    background-position: center;
+}
+
+/* تنظیمات header */
+header {
+    background-color: rgba(0, 51, 102, 0.9);
+    padding: 20px;
+    text-align: center;
+}
+
+/* تنظیمات برای دکمه‌ها */
+button {
+    background-color: #00599c; /* رنگ آبی روشن‌تر برای دکمه‌ها */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #004477; /* تغییر رنگ هنگام hover */
+}
+
+/* مخفی کردن بخش‌ها با کلاس hidden */
+.hidden {
+    display: none;
+}
+
+/* تنظیمات برای بخش سوالات */
+#challenge, #result {
+    background-color: rgba(0, 51, 102, 0.9); /* پس‌زمینه نیمه‌شفاف */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* دکمه برگشت */
+.back-btn {
+    background-color: #ff6600;
+    border-radius: 50%;
+    padding: 12px;
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+}
+
+.back-btn:hover {
+    background-color: #e65c00;
+}
+
+/* بخش امتیاز */
+#score {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+    color: white;
+}
+
+/* تنظیمات برای انتخاب زبان */
+#language-selector {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* واکنش‌گرایی */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    #score {
+        font-size: 18px;
+    }
+}

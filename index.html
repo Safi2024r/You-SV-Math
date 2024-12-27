@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Math Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Math Challenge</h1>
+        <p id="subtitle">Choose a category to start solving challenges!</p>
+        <select id="language-selector" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="fa">دری</option>
+        </select>
+    </header>
+
+    <main>
+        <!-- دسته‌بندی‌ها برای انتخاب چالش -->
+        <section class="categories">
+            <button id="btn-addition" onclick="startChallenge('addition')">Addition</button>
+            <button id="btn-subtraction" onclick="startChallenge('subtraction')">Subtraction</button>
+            <button id="btn-multiplication" onclick="startChallenge('multiplication')">Multiplication</button>
+            <button id="btn-division" onclick="startChallenge('division')">Division</button>
+        </section>
+        
+        <!-- بخش چالش که بعد از انتخاب دسته‌بندی نمایش داده می‌شود -->
+        <section id="challenge" class="hidden">
+            <p id="question"></p>
+            <input type="number" id="answer" placeholder="Your answer">
+            <button id="btn-submit" onclick="checkAnswer()">Submit</button>
+            <button id="btn-back" class="back-btn" onclick="goBack()">← Back to Main</button>
+        </section>
+
+        <!-- بخش نتیجه که بعد از ارسال جواب به نمایش درمی‌آید -->
+        <section id="result" class="hidden">
+            <p id="feedback"></p>
+            <button id="btn-next" onclick="nextQuestion()">Next Question</button>
+            <button id="btn-back-result" class="back-btn" onclick="goBack()">← Back to Main</button>
+        </section>
+
+        <!-- نمایش امتیاز -->
+        <div id="score">Score: 0</div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

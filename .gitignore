@@ -1,0 +1,24 @@
+# Ignore Chrome's cache and other system files
+AppData/
+*.log
+*.bak
+*.tmp
+AppData/Local/Google/Chrome/User Data/*
+
+# Ignore system and application data files
+AppData/
+Desktop/
+Downloads/
+Documents/
+Music/
+Pictures/
+Videos/
+OneDrive/
+
+# Ignore specific files related to Windows user profile
+NTUSER.DAT
+NTUSER.DAT{*}.TM.blf
+NTUSER.DAT{*}.TMContainer*
+ntuser.dat.LOG1
+ntuser.dat.LOG2
+ntuser.ini
